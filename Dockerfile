@@ -6,8 +6,6 @@ ENV MAP=TheIsland
 RUN ulimit -n 100000 && \
     /home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/steam/arkserver +app_update 376030 +quit
 
-COPY GameUserSettings.ini /home/steam/arkserver/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini
-
 VOLUME /home/steam/arkserver/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini
 
 WORKDIR /home/steam/arkserver/ShooterGame/Binaries/Linux
