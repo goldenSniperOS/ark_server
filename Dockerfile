@@ -13,7 +13,7 @@ VOLUME /home/steam/arkserver/ShooterGame/Saved/Config/LinuxServer/GameUserSettin
 
 WORKDIR /home/steam/arkserver/ShooterGame/Binaries/Linux
 
-EXPOSE 7777
-EXPOSE 27015
+EXPOSE 32330 27015 25147
+EXPOSE 7777/udp 7778/udp 25147/udp 27015/udp
 
 CMD ["/home/steam/start.sh", "${MAP}", "${SERVER_NAME}"]
